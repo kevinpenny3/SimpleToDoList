@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -8,10 +9,14 @@ namespace ToDo.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        public Id MyProperty { get; set; }
+        [Required]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
+        [Required]
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
-        public ApplicationUser ApplicationUser { get; set; }
-        public string ApplicationUser { get; set; }
+        public List<ToDoItem> ToDoItems { get; set; }
 
     }
 }

@@ -17,7 +17,7 @@ namespace ToDo.Models
         [Display(Name = "To Do Status")]
         public bool ToDoStatus { get; set; }
         public int ToDoStatusId  { get; set; }
-        public int ApplicationUserId { get; set; }
+        public string ApplicationUserId { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
 
     }

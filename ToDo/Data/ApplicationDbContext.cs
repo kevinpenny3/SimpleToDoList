@@ -16,6 +16,7 @@ namespace ToDo.Data
         }
 
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<ToDoItem> TodoItem { get; set; }
         public DbSet<ToDoStatus> ToDoStatus { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

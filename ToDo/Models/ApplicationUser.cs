@@ -9,7 +9,7 @@ namespace ToDo.Models
 {
     public class ApplicationUser : IdentityUser
     {
-        public Id MyProperty { get; set; }
+        public string Id { get; set; }
         [Required]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
